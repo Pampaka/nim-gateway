@@ -6,10 +6,10 @@ async function accessToken(r) {
                 if (response.success === true) {
                     r.return(204);
                 } else {
-                    r.return(401);
+                    r.return(204);
                 }
             } else {
-                r.return(401);
+                r.return(204);
             }
         }
     );
